@@ -65,7 +65,7 @@ type CreateGroupModalProps = {
 
 // Components
 const HeaderLogo: React.FC<HeaderLogoProps> = () => (
-  <Image source={require('./assets/images/sqe_logo.jpeg')} style={{ width: 30, height: 30 }} />
+  <Image source={require('./assets/images/sqe_removed.png')} style={{ width: 65, height: 35 }} />
 );
 
 const SectionDescription: React.FC<SectionDescriptionProps> = ({ description }) => (
@@ -405,7 +405,7 @@ const ChatScreen: React.FC = () => (
 
 const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => (
   <View style={styles.loginContainer}>
-    <Image source={require('./assets/images/sqe_logo.jpeg')} style={styles.logo} />
+    <Image source={require('./assets/images/sqe_logo-removebg.png')} style={styles.logo} />
     <TextInput placeholder="Username" style={styles.input} />
     <TextInput placeholder="Password" secureTextEntry style={styles.input} />
     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Messenger')}>
